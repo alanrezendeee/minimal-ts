@@ -10,7 +10,8 @@ export type ThemeColorPreset =
   | 'preset2'
   | 'preset3'
   | 'preset4'
-  | 'preset5';
+  | 'preset5'
+  | 'preset6';
 
 export const primaryColorPresets: Record<ThemeColorPreset, PaletteColorNoChannels> = {
   default: {
@@ -59,6 +60,15 @@ export const primaryColorPresets: Record<ThemeColorPreset, PaletteColorNoChannel
     main: '#FF3030',
     dark: '#B71833',
     darker: '#7A0930',
+    contrastText: '#FFFFFF',
+  },
+  // Verde (rgb 0, 113, 71) — mesma matiz em toda a escala.
+  preset6: {
+    lighter: '#CBF6E6',
+    light: '#4EBC93',
+    main: '#007147',
+    dark: '#004D30',
+    darker: '#002E1D',
     contrastText: '#FFFFFF',
   },
 };
@@ -111,5 +121,14 @@ export const secondaryColorPresets: Record<ThemeColorPreset, PaletteColorNoChann
     dark: '#904220',
     darker: '#601B0C',
     contrastText: '#FFFFFF',
+  },
+  // Âmbar para acompanhar o verde do preset6.
+  preset6: {
+    lighter: '#FFF5CC',
+    light: '#FFD666',
+    main: '#FFAB00',
+    dark: '#B76E00',
+    darker: '#7A4100',
+    contrastText: '#1C252E',
   },
 };
